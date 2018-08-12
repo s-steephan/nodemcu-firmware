@@ -128,8 +128,8 @@ static int docall (lua_State *L, int narg, int clear) {
 
 
 static void print_version (lua_State *L) {
-  lua_pushliteral (L, "\n <<-- powered by appsinfinity, coimbatore -->");
-  lua_pushstring (L, "\n <<-- vist us on www.appsinfinity.com -->");
+  lua_pushliteral (L, "\n powered by appsinfinity");
+  lua_pushstring (L, "");
   lua_concat (L, 2);
   const char *msg = lua_tostring (L, -1);
   l_message (NULL, msg);
